@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+    <head>
+        <title>My Web Development Journey</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/blogpages.css">
+        <link rel="shortcut icon" href="../images/favicon_io/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../images/favicon_io/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header"> <!-- When typing this I just discovered Emmit Abbreaviations! By typing . followed by classname and hit enter! it creates the Div tag with the associated class name so fast! -->
+                <h1>My EDA Journey</h1>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a class="active" href="html-css.html">Tech Blog</a></li>
+                    <li><a href="learningplan.html">My Learning Plan</a></li>
+                </ul>
+             </div> 
+             <div class="leftspace">Left dead space</div>
+             <div class="content">
+
+                <h3>What is the difference between Margin, Border, Padding?</h3>
+                <p>Welcome to my first <span id="techblog">Tech blog!</span> In this blog I will try to explain the differences between Margins, Borders, and Padding. Hopefully by the end of this lesson you will have a good understanding of how these concepts work and how to best implement them in your future Web-development projects. </p>
+                <p>Before we get into the definitions of each concept, let’s first ask ourselves:</p> 
+                    <h5><em>“What are webpages made of?”</em></h5>
+                <p>Well, from a conceptual point of view, a webpage is basically a grid of ‘boxes’ or ‘containers’ neatly organised in a way that users can easily view content. Did you get all of that? :) </p>
+                <p>To better understand, here is a visual outline of my Home page, you can clearly see that in its raw form it is just a group of containers with borders and spaces in between. Now the space that seperates boxes/containers and it's contents inside is what we will be looking at. So let's get into it!</p> 
+                
+                
+                    <img src="../images/Wireframe.jpeg" alt="Wire Frame">
+                    <img src="../images/Wireframe-alt.jpeg" alt="Wire Frame">
+                
+                
+                <p>In more detail we will see how we can control the gaps in-between each container (Margins), the space around the contents inside (Padding), and the space around the edges of the containers (Borders). Simple as that! The left picture above displays the containers and the picture to the right shows the shaded areas which highlight the grids Margin and Padding. Below is probably the most important image of this blog, it shows the different spaces for each topic that we will talk about. Get familiar with it! Print it out! and let it be your visual refference for understand Margins, Padding, and Borders.</p>
+                    <img class="large-image" src="../images/MPB-Diagram.png" alt="Diagram">
+
+                <h4>What is a Margin?</h4>
+                <p>As defined by <a href="https://www.w3schools.com/css/css_margin.asp">w3schools</a>, margins are used to create space around elements outside of any defined borders. We can set margins of a container by using the margin attributes that are available with Cascading Style Sheets (CSS). For more information about CSS click on this <a href="https://www.w3schools.com/whatis/whatis_w3css.asp">link</a>. The key properties for specifying the margin for each side of an element are:</p>
+                <ul class="margin-properties">
+                    <li><code class="margin-properties-li">margin-top</code></li>
+                    <li><code class="margin-properties-li">margin-right</code></li>
+                    <li><code class="margin-properties-li">margin-bottom</code></li>
+                    <li><code class="margin-properties-li">margin-left</code></li>
+                </ul>
+                <p>The values of these margin properties can be defined by length (in px, pt, cm), % of the width of the containing element, or by 'auto' where the browser calculates the margin for you. By adjusting the margins of a container what you are affectively doing is increasing or decreasing the outside space of the container as shown in the following image:</p>
+                <p>Here is an example of code I have used to set my margins for paragraphs, notice how I have defined the lengths by both px and %?. Defining the length by px creates a fixed length, and defining the length by % will create a dynamic lenth that will change in response to the container size.</p>
+                <img src="../images/margin-code.png" alt="Margin code">
+
+                <h4>What is Padding?</h4>
+                <p>Padding is used to create space around an element's content, inside of any defined borders. If I were to take this paragraph for example, the content (ie: this text that I am writing) is located inside a parent container, now the space from the outside of this text to the inside edge of this containers border is the space that the Padding attribute controls. There you go, simple right? Lets take a look here: </p>
+                <img class="large-image" src="../images/padding-image.png" alt="Padding image">
+                <p>If you look closely, you can see the text content is shaded blue, and above/below the content you can see the orange space right? Well that is the padding space. In this case we have set the padding for the top and bottom to 10px and the left and right to 0px. Defining the CSS padding properties is very much the same as defining our margins, here are the properties we use: </p>
+                <ul class="margin-properties">
+                    <li><code class="margin-properties-li">padding-top</code></li>
+                    <li><code class="margin-properties-li">padding-right</code></li>
+                    <li><code class="margin-properties-li">padding-bottom</code></li>
+                    <li><code class="margin-properties-li">padding-left</code></li>
+                </ul>
+                <p>And here is the code that I have used to define the orange padding spaces in the example above:</p>
+                <img src="../images/padding-code.png" alt="Padding code">
+                <h5><em>Are you starting to get the picture?</em></h5>
+                <h4>What about Borders?</h4>
+                <p>The last piece of the puzzle for this tech tutorial is the Border property! Very simply, this property allows you to specify the style, width and color of an elements's border. Nothing flashy, that is it..... Here are the main properties that you would use to define your border: </p>
+                <ul class="margin-properties">
+                    <li><code class="margin-properties-li">border-width</code></li>
+                    <li><code class="margin-properties-li">border-color</code></li>
+                    <li><code class="margin-properties-li">border-style</code></li>
+                    <li><code class="margin-properties-li">border-radius</code></li>
+                </ul>
+                <p id="border-test">For the purposes of this blog, our focus is primarily on the border-width attribute. This sets the size or thickness of the border and therefore the final area of space that is between the containers Margin and Padding settings. Below is the code I have used to define this red dotted border.</p> 
+                <img src="../images/border-code.png" alt="Padding code">
+                <p>Now can you see the differences between each of the 3 key spacial concepts? Great! Let's re-cap and use our original image from the begining to see the 3 different spacial areas of a container and how they are all connected. </p>
+                <img class="large-image" src="../images/MPB-Diagram.png" alt="Diagram">
+                <ul class="marging-properties-smtxt">
+                    <li>Starting with the Margin, this area highlighted in green above defines the space around the outside of a container and it's Border.</li>
+                    <li>Next is the border-width, this highlighted in red defines the space between the Margin and Padding settings.</li>
+                    <li>and Finally, the Padding area is the space that is defined between the Content and the containers Border.</li>
+                </ul>
+                <p>I hope this has been a useful tutorial for you and wish you well on your journey to becomimg a Web-Developing Guru! Thank you for reading my tech-blog. Nga Mihi, Lewis.</p>
+             </div>
+             <div class="rightspace">Right dead space</div>
+             <div class="footer">Footer</div>
+        </div>
+    </body>
+</html> 
+
