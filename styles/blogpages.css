@@ -19,7 +19,7 @@ body {
     /* grid-template-columns: 1fr 1fr 1fr; /* Note - Define 3 columns of size 1 Fraction of the available space*/
     /* grid-template-rows: 50px 1fr 1fr 100px; Note - Define 4 Rows, Top and bottom with fixed px size, and middle two rows with Relative fraction sizes */
 
-    grid-template: .1fr 1fr 100px / 1fr 10fr 1fr; /* Me being tricky here, using the abbreviated definition.*/
+    grid-template: .1fr 1fr 100px / .1fr 10fr .1fr; /* Me being tricky here, using the abbreviated definition.*/
 
     gap: 10px; /* This sets the padding for all the available zones within the Grid - Excluding the edges of the container*/
     padding: 10px; /* Adding padding to the container of 10px, this will push the container outside of the screens size as there are extra pixels overlapping the full container size*/
