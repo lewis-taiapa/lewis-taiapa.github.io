@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+    <head>
+        <title>My Web Development Journey</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/blogpages.css">
+        <link rel="shortcut icon" href="../images/favicon_io/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../images/favicon_io/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header"> <!-- When typing this I just discovered Emmit Abbreaviations! By typing . followed by classname and hit enter! it creates the Div tag with the associated class name so fast! -->
+                <h1>My EDA Journey</h1>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="identity-values.html">Identity</a></li>
+                    <li><a href="html-css.html">Tech-blog</a></li>
+                    <li><a href="learning-plan.html">My Learning Plan</a></li>
+                    <li><a href="emotional-intelligence.html">What is EQ?</a></li>
+                    <li><a href="javascript-dom.html">JS - Fundamentals</a></li>
+                    <li><a href="neuroplasticity.html">Growth Mindset</a></li>
+                    <li><a class="active" href="problem-solving.html">Problem Solving</a></li>
+                </ul>
+             </div> 
+             <div class="leftspace"></div>
+             <div class="content">
+
+                <h3>Problem Solving</h3>
+                    <p>
+                        Welcome to my week 4 technical blog, in this blog we will explore the concept of problem solving and explain why it is important to developers. I will also share some moments where I came across a few problems and what approaches I took to solve them.
+                    </p>
+                    <img class="medium-image" src="../images/problemsolution.jpeg" alt="Problem Solving">
+                    <p>
+                        In the world of Web Development, you are going to come across a wide range of problems that you will need to solve. This may be in the form of writing complex code to achieve a users requirements, having to learn or research new tools  or properties to create a new solution, going over someone else’s code to fix bugs, the list goes on. Either way, as a developer, it is important for you to have skills necessary to be able to attack these problems in any situation. Problem solving is one of the most important skills to have as a developer and the best developers are quite often the best problem solvers! So what does it take to become a good problem solver? Is it a skill that can be developed? Absolutely!!! Here is a small list of techniques that most developers use to guide them in their day to day problem solving tasks:
+                    </p>
+                    <ul id="regular-size-font">
+                        <li>
+                            <p><b>Using Pseudocode:</b></p>
+                            <div id="youtubeContainer">
+                                <iframe src="https://www.youtube.com/embed/HhBrkpTqzqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+                                </div>
+                        </li>
+                        <li>
+                            <p><b>The Rubber Ducky method:</b></p>
+                            <div id="youtubeContainer">
+                                <iframe src="https://www.youtube.com/embed/QLClMf6yO-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+                                </div>
+                        </li>
+                        <li>
+                            <p><b>Reading error messages & Console.logging:</b></p>
+                            <div id="youtubeContainer">
+                                <iframe src="https://www.youtube.com/embed/LuGsp5KeJMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+                                </div>
+                        </li>
+                        <li><p></p><b>Googling</b> - “Google is your friend” Use Google to research ways to help you solve your problem</li>
+                        <li>Trying something</li>
+                        <li>Asking your peers for help</li>
+                        <li>Asking coaches for help</li>
+                        <li>Improving your process with reflection</li>
+                    </ul>
+
+                <h4>Tell a Non-Technical Friend about a time you got blocked on a simple problem</h4>
+                    <p>
+                        In this weeks Technical sprint I got stuck on a problem where I had to figure out a coding process to check if a number is odd or even. Although it may sound simple at first, translating that condition into logic using JavaScript code is a totally different thing! Something so small and simple can be quite the technical task.
+                    </p>
+                    
+                <h5>What was the problem?</h5>
+                   <p>
+                        The problem was figuring out how to check if a number is odd or even using JavaScript code.
+                    </p>
+                    
+                <h5>What problem solving techniques did you use?</h5>
+                    <p>
+                        At first I went online and used the Google approach to see what options or available methods there are to do this hoping to find an easy fix or built in method to do the calculations for me. To my dismay there weren’t any easy methods available, so I had to do some extra work and build a manual condition from scratch. I found a work around using the x % 2 remainder function, it is pretty simple once you get your head around it. All you need to do is input a number x into the equation ‘x % 2’ and if the result is == 0 then that means x is divisible by 2, which will then mean x is an even number! Reason being because any number that is divisible by 2 with no remainder will always be an even number, and there you have it, our solution!
+                    </p>
+                
+                <h5>How did you feel throughout the process?</h5>
+                    <p>
+                        I felt bit of nervousness at the beginning, just because I was unsure what to do and how to attack the problem. But once I committed to going online and researching ways to approach the problem those feelings began to change and I felt some relief because I could slowly start to see how I could make this work. By the end of the process I was quite proud of what I had achieved and definitely learnt something new to add to my knowledge base of JavaScript hacks.                    
+                    </p>
+                
+                <h5>What did you learn?</h5>
+                    <p>
+                        I learnt how to use the ‘x % 2’ reminder function to see if a number is purely divisible by another number or not. Then using this process to indicate if a number is odd or even. I learnt that it can also be used to see if any value of x is divisible by any other number as well not just the hard coded value 2. Reading through the articles, I found some cool other uses for this function like applying alternating background colours to table rows in CSS. A lot of developers use the remainder function to set every second row to a different colour which gives a nicer more reader friendly look to table data, especially if the table has alot of columns stretching across the screen. Check out the 2 tables I created below,he first table shows the list of Hockey player stats with normal row formatting, and the second table shows the same data but with alternating background colours. From a user perspective it can kind of make the data easier to read, and this is one visual application of the remainder function.
+                    </p>
+                    <p>                    
+                        For more information on using the remainder function for alternating rows click <a href="https://stackoverflow.com/questions/4217825/how-would-you-write-an-alternating-row-function-using-modulus-in-coffeescript">here</a>.
+                    </p>
+                    <img class="medium-image" src="../images/normalLines.png" alt="To do list">
+                    <img class="medium-image" src="../images/alternatingLines.png" alt="Control Flow Script">
+                    
+                    
+            <h4>Tell a Non-Technical Friend about a time solved a problem in an elegant way</h4>
+                    <p>
+                        One example of solving a problem in a more elegant way was this weeks use of the Array.filter() method. There was a task that required you to remove all odd numbers from a list (array) of numbers. The only method or function that I knew of to complete this task required me to write a lot of manual code to achieve the desired result, and that was to use the Array.map() method. For anyone who doesn’t know anything about coding, this method goes through each item in a list one by one and changes/deletes/adds items depending on what you are trying to achieve. In this case all we are trying to do is remove all odd numbers. The map method allows you to do that but requires you to write a whole bunch of extra code to do so. There was a better way, and I found it!
+                    </p>
+                    
+                <h5>What was the problem?</h5>
+                   <p>
+                        The problem here was that using the .map() method was taking too long to build the code and get all the logic right. I spent a lot of time creating a specific function which went through every number in the list and deleted those that were odd without first looking for potential other more simpler ways to achieve the same result.
+                    </p>
+                    
+                <h5>What problem solving techniques did you use?</h5>
+                    <p>
+                        Research, I used the same approach of going online and searching for better ways to interact with JavaScript Array lists, and found a solution! Arrays have a special method called .filter() which behaves like .map by going through each item in a list but more specifically only apply’s one change, you guessed it, removes items from the list (array) depending on what condition you set! How good is that?!
+                    </p>
+                
+                <h5>How did you feel throughout the process?</h5>
+                    <p>
+                        I felt a bit lost in the beginning because I didn’t know where to start, but when I went and did some research I felt a relief of stress and good to find a better solution. It’s rewarding to see your code working especially when it is doing something so complex but written in one line of simple code. I managed to achieve the same result using one small line of code with .filter() then the 6-7 lines of custom code using .map() to achieve the same result.
+                    </p>
+                
+                <h5>What did you learn?</h5>
+                    <p>
+                        I learned that google is your friend, especially for Coding! You can pretty much find anything you need for JavaScript online, including discussion boards of people who may have had the same problems and developers providing recommendations or solutions to approaching those problems. I also learned how to use the .filter() method, and how it can save you so much time when wanting to remove items from an Array. I had to learn this the hard way haha but at least now I won’t forget!
+                    </p>
+                    
+             </div>
+             <div class="rightspace"></div>
+             <div class="footer">Footer</div>
+        </div>
+    </body>
+</html> 
